@@ -128,7 +128,7 @@ body {
     padding-bottom: 32px;
 }
 
-.header-logo {
+.header-nav__logo {
     margin-right: 93px;
 }
 
@@ -142,29 +142,27 @@ body {
     text-decoration: none;
 }
 
-.header-logo-span {
+.header-nav__logo-span {
     color: var(--main-txt-cl);
     text-decoration: none;
 }
 
-.header-list {
+.header-nav__list {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.header-list, .list {}
-
-.header-list-item {
+.header-nav__item {
     position: relative;
     margin-right: 50px;
 }
 
-.header-list-item:last-child {
+.header-nav__item:last-child {
     margin-right: 0;
 }
 
-.header-list-item-active::after {
+.header-nav__item--active::after {
     content: "";
     display: flex;
     position: absolute;
@@ -176,7 +174,7 @@ body {
     border-radius: 2px;
 }
 
-.header-link {
+.header-nav__link {
     width: 122px;
     height: 16px;
     left: 1263px;
@@ -188,8 +186,8 @@ body {
     transition: color var(--anim);
 }
 
-.header-link:hover,
-.header-link:focus {
+.header-nav__link:hover,
+.header-nav__link:focus {
     color: var(--accent-txt-cl);
     transform: var(--anim);
 }
@@ -313,7 +311,7 @@ body {
 }
 /* benefits-set end */
 
-.benefits-icon-container {
+.benefits-item__icon-container {
     display: flex;
     width: 270px;
     height: 120px;
@@ -324,7 +322,7 @@ body {
     border-radius: 4px;
 }
 
-.benefits-list-item-title {
+.benefits-item__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14x;
@@ -334,7 +332,7 @@ body {
     margin-bottom: 10px;
 }
 
-.benefits-list-item-text {
+.benefits-item__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -678,32 +676,32 @@ body {
     padding-bottom: 60px;
 }
 
-.footer-contact-container {
+.footer-contact {
     margin-right:  70px;
 }
 
-.footer-logo {}
+.footer-contact__logo {}
 
-.footer-logo-span {
+.footer-contact__logo-span {
     color: var(--secondary-accent-txt-cl);
 }
 
-.footer-address {
+.footer-contact__address {
     font-style: normal;
     margin-top: 20px;
 }
 
-.footer-address-list, .list {}
+.footer-contact__list, .list {}
 
-.footer-address-list-item {
+.footer-contact__item {
     margin-bottom: 9px;
 }
 
-.footer-address-list-item:last-child {
+.footer-contact__item:last-child {
     margin-bottom: 0;
 }
 
-.footer-address-link {
+.footer-contact__address-link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -712,13 +710,13 @@ body {
     transition: color var(--anim);
 }
 
-.footer-address-link:hover,
-.footer-address-linknk:focus {
+.footer-contact__address-link:hover,
+.footer-contact__address-link:focus {
     color: var(--accent-txt-cl);
     transform: var(--anim);
 }
 
-.footer-link {
+.footer-contact__link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -727,13 +725,13 @@ body {
     transition: color var(--anim);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-contact__link:hover,
+.footer-contact__link:focus {
     color: var(--accent-txt-cl);
     transform: var(--anim);
 }
 
-.footer-social-link-container {
+.footer-social-media {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -749,20 +747,20 @@ body {
     margin-bottom: 20px;
 }
 
-.footer-social-link-list {
+.footer-social-media__list {
     display: flex;
     flex-direction: row;
 }
 
-.footer-social-link-list-item {
+.footer-social-media__item {
     margin-right: 10px;
 }
 
-.footer-social-link-list-item:last-child {
+.footer-social-media__item:last-child {
     margin-right: 0;
 }
 
-.footer-social-link {
+.footer-social-media__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -774,29 +772,29 @@ body {
     transition: background-color var(--anim);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-media__link:hover,
+.footer-social-media__link:focus {
     background-color: var(--logo-icons-accent-cl);
     transform: var(--anim);
 }
 
-.footer-social-link-icon {
+.footer-social-media__icon {
     fill: currentColor;
     margin: 12px;
 }
 
-.footer-email-input-container {
+.footer-register {
     position: relative;
     width: 570px;
     height: 86px;
 }
 
-.footer-email-input-form {
+.footer-register__form {
     display: flex;
     flex-direction: row;
 }
 
-.footer-input-email {
+.footer-register__input {
     box-sizing: border-box;
     width: 358px;
     height: 50px;
@@ -810,7 +808,7 @@ body {
     outline: transparent;
 }
 
-.footer-input-btn {
+.footer-register__btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
