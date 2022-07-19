@@ -2,26 +2,26 @@
     padding-bottom: 94px;
 }
 
-.practice-title {
+.practice__title {
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 50px;
 }
 
-.practice-list {
+.practice__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
 
-.practice-list-item-thumb {
+.practice-item-thumb {
     position: relative;
     width: 370px;
     height: 294px;
 }
 
-.practice-list-item-label {
+.practice-item-label {
     display: flex;
     justify-content: center;
     align-items: center;

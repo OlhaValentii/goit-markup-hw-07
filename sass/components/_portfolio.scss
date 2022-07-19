@@ -56,7 +56,7 @@
     flex-basis: calc((100% - var(--portfolio-gap) * 2) / var(--portfolio-items));
 }
 
-.portfolio-list-item {
+.portfolio__item {
     display: flex;
     flex-direction: column;
     border: 1px solid #EEEEEE;
@@ -69,18 +69,18 @@
     }
 }
 
-.portfolio-img-item-thumb {
+.portfolio__img {
     position: relative;
     display: flex;
     height: 294px;
     overflow: hidden;
 
-    &:hover .portfolio-img-item-overlay {
+    &:hover .portfolio__overlay {
         transform: translateY(0);
     }
 }
 
-.portfolio-img-item-overlay {
+.portfolio__overlay {
     position: absolute;
     display: flex;
     padding-left: 24px;
@@ -101,11 +101,11 @@
     transition: transform var(--anim);
 }
 
-.portfolio-list-item-info {
+.portfolio-info {
     margin: 20px 24px;
 }
 
-.portfolio-list-item-title {
+.portfolio-info__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -113,7 +113,7 @@
     color: var(--main-txt-cl);
 }
 
-.portfolio-list-item-text {
+.portfolio-info__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;

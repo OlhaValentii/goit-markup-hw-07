@@ -278,7 +278,7 @@ body {
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -290,7 +290,7 @@ body {
   margin-bottom: 30px;
 }
 
-.hero-btn {
+.hero__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.19;
@@ -305,7 +305,7 @@ body {
   -webkit-transition: background-color var(--anim);
   transition: background-color var(--anim);
 }
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188CE8;
   -webkit-transform: var(--anim);
           transform: var(--anim);
@@ -371,7 +371,7 @@ body {
   padding-bottom: 94px;
 }
 
-.practice-title {
+.practice__title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -381,7 +381,7 @@ body {
   margin-bottom: 50px;
 }
 
-.practice-list {
+.practice__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,13 +397,13 @@ body {
           flex-direction: row;
 }
 
-.practice-list-item-thumb {
+.practice-item-thumb {
   position: relative;
   width: 370px;
   height: 294px;
 }
 
-.practice-list-item-label {
+.practice-item-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,18 +438,18 @@ body {
   background-color: var(--secondary-accent-bg-cl);
 }
 
-.team-title {
+.team__title {
   margin-bottom: 50px;
 }
 
-.team-list-item {
+.team__item {
   padding-bottom: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item-title {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -460,7 +460,7 @@ body {
   margin-bottom: 10px;
 }
 
-.team-list-item-text {
+.team__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -470,7 +470,7 @@ body {
   margin-bottom: 16px;
 }
 
-.team-social-link-list {
+.team-social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,14 +483,14 @@ body {
           justify-content: center;
 }
 
-.team-social-link-list-item {
+.team-social__item {
   margin-right: 10px;
 }
-.team-social-link-list-item:last-child {
+.team-social__item:last-child {
   margin-right: 0;
 }
 
-.team-social-link {
+.team-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,18 +508,18 @@ body {
   -webkit-transition: color var(--anim), background-color var(--anim);
   transition: color var(--anim), background-color var(--anim);
 }
-.team-social-link:hover, .team-social-link:focus {
+.team-social__link:hover, .team-social__link:focus {
   color: var(--logo-icons-secondary-accent-cl);
   background-color: var(--logo-icons-accent-cl);
   -webkit-transform: var(--anim);
           transform: var(--anim);
 }
 
-.team-social-link-icon {
+.team-social__icon {
   fill: currentColor;
   margin: 12px;
 }
-.team-social-link-icon:hover, .team-social-link-icon:focus {
+.team-social__icon:hover, .team-social__icon:focus {
   fill: currentColor;
 }
 
@@ -528,7 +528,7 @@ body {
   padding-bottom: 94px;
 }
 
-.clients-title {
+.clients__title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -538,7 +538,7 @@ body {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,7 +552,7 @@ body {
   cursor: pointer;
 }
 
-.clients-list-item {
+.clients__item {
   margin-right: 30px;
   padding: 16px 32px;
   color: var(--logo-icons-main-cl);
@@ -561,20 +561,20 @@ body {
   -webkit-transition: color var(--anim), border var(--anim);
   transition: color var(--anim), border var(--anim);
 }
-.clients-list-item:last-child {
+.clients__item:last-child {
   margin-right: 0;
 }
-.clients-list-item:hover, .clients-list-item:focus {
+.clients__item:hover, .clients__item:focus {
   color: var(--logo-icons-accent-cl);
   border: 1px solid var(--logo-icons-accent-cl);
   -webkit-transform: var(--anim);
           transform: var(--anim);
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
-.clients-icon:hover, .clients-icon:focus {
+.clients__icon:hover, .clients__icon:focus {
   fill: currentColor;
 }
 
@@ -649,7 +649,7 @@ body {
       flex-basis: calc((100% - var(--portfolio-gap) * 2) / var(--portfolio-items));
 }
 
-.portfolio-list-item {
+.portfolio__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,14 +663,14 @@ body {
   transition: box-shadow var(--anim);
   transition: box-shadow var(--anim), -webkit-box-shadow var(--anim);
 }
-.portfolio-list-item:hover, .portfolio-list-item:focus {
+.portfolio__item:hover, .portfolio__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   -webkit-transform: var(--anim);
           transform: var(--anim);
 }
 
-.portfolio-img-item-thumb {
+.portfolio__img {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,12 +678,12 @@ body {
   height: 294px;
   overflow: hidden;
 }
-.portfolio-img-item-thumb:hover .portfolio-img-item-overlay {
+.portfolio__img:hover .portfolio__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.portfolio-img-item-overlay {
+.portfolio__overlay {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,11 +712,11 @@ body {
   transition: transform var(--anim), -webkit-transform var(--anim);
 }
 
-.portfolio-list-item-info {
+.portfolio-info {
   margin: 20px 24px;
 }
 
-.portfolio-list-item-title {
+.portfolio-info__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -724,7 +724,7 @@ body {
   color: var(--main-txt-cl);
 }
 
-.portfolio-list-item-text {
+.portfolio-info__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;

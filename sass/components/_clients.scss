@@ -3,20 +3,20 @@
     padding-bottom: 94px;
 }
 
-.clients-title {
+.clients__title {
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     justify-content: center;
     flex-direction: row;
     cursor: pointer;
 }
 
-.clients-list-item {
+.clients__item {
     margin-right: 30px;
     padding: 16px 32px;
     color: var(--logo-icons-main-cl);
@@ -36,7 +36,7 @@
     }
 }
 
-.clients-icon {
+.clients__icon {
     fill: currentColor;
 
     &:hover,
